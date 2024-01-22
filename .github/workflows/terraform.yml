@@ -18,14 +18,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Change working directory
-        run: cd environments/${{ github.event.inputs.environment }}
-
       - name: Terraform init
-        run: terraform init
+        run: cd environments/${{ github.event.inputs.environment }} && terraform init
 
       - name: Terraform plan
-        run: terraform plan
+        run: cd environments/${{ github.event.inputs.environment }} && terraform plan
 
       - name: Terraform apply
-        run: terraform apply --auto-approve
+        run: cd environments/${{ github.event.inputs.environment }} && terraform apply --auto-approve
