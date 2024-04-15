@@ -3,8 +3,8 @@
 # This script should be used to create a storage account to serve as the terraform
 # backend and store the state files. Most of this script was based on the following URL
 # https://learn.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli
-RESOURCE_GROUP_NAME=openquestion-tfstate
-STORAGE_ACCOUNT_NAME=openquestiontfstate
+RESOURCE_GROUP_NAME=tfstate
+STORAGE_ACCOUNT_NAME=tfstate
 CONTAINER_NAME=tfstate
 
 # Login to Azure CLI

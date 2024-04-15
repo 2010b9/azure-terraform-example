@@ -1,6 +1,6 @@
 variable "project" {
   type    = string
-  default = "openquestion"
+  default = "my_awesome_project"
 }
 
 variable "environment" {

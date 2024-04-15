@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "openquestion-tfstate"
-    storage_account_name = "openquestiontfstate"
+    resource_group_name  = "tfstate"
+    storage_account_name = "tfstate"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
